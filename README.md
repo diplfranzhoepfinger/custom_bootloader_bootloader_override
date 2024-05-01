@@ -1,5 +1,16 @@
 
 
+
+```
+Bootloader binary size 0x7800 bytes. 0x800 bytes (6%) free.
+
+
+```
+
+
+
+
+
 https://github.com/espressif/esp-idf/issues/13727
 
 ```
