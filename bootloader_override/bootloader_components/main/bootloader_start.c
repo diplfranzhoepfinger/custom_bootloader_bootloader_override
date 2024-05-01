@@ -28,6 +28,11 @@ extern uint32_t crc32Table[256];
 extern uint32_t sctp_crc_tableil8_o32[256];
 extern uint32_t sctp_crc_tableil8_o40[256];
 extern uint32_t sctp_crc_tableil8_o48[256];
+extern uint32_t sctp_crc_tableil8_o56[256];
+extern uint32_t sctp_crc_tableil8_o64[256];
+extern uint32_t sctp_crc_tableil8_o72[256];
+extern uint32_t sctp_crc_tableil8_o80[256];
+extern uint32_t sctp_crc_tableil8_o88[256];
 
 /*
  * We arrive here after the ROM bootloader finished loading this second stage bootloader from flash.
@@ -71,7 +76,11 @@ void __attribute__((noreturn)) call_start_cpu0(void)
     esp_rom_printf("[%s] sctp_crc_tableil8_o32[0] %d \n", TAG, sctp_crc_tableil8_o32[0]);
     esp_rom_printf("[%s] sctp_crc_tableil8_o40[0] %d \n", TAG, sctp_crc_tableil8_o40[0]);
     esp_rom_printf("[%s] sctp_crc_tableil8_o48[0] %d \n", TAG, sctp_crc_tableil8_o48[0]);
-
+    esp_rom_printf("[%s] sctp_crc_tableil8_o56[0] %d \n", TAG, sctp_crc_tableil8_o56[0]);
+    esp_rom_printf("[%s] sctp_crc_tableil8_o64[0] %d \n", TAG, sctp_crc_tableil8_o64[0]);
+    esp_rom_printf("[%s] sctp_crc_tableil8_o72[0] %d \n", TAG, sctp_crc_tableil8_o72[0]);
+    esp_rom_printf("[%s] sctp_crc_tableil8_o80[0] %d \n", TAG, sctp_crc_tableil8_o80[0]);
+    esp_rom_printf("[%s] sctp_crc_tableil8_o88[0] %d \n", TAG, sctp_crc_tableil8_o88[0]);
 
 
 

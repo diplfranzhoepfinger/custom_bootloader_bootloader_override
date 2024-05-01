@@ -409,7 +409,7 @@ uint32_t sctp_crc_tableil8_o48[256] =
  * File Name = ............................ 8x256_tables.c
  */
 
-static uint32_t sctp_crc_tableil8_o56[256] =
+uint32_t sctp_crc_tableil8_o56[256] =
 {
 	0x00000000, 0xDD45AAB8, 0xBF672381, 0x62228939, 0x7B2231F3, 0xA6679B4B, 0xC4451272, 0x1900B8CA,
 	0xF64463E6, 0x2B01C95E, 0x49234067, 0x9466EADF, 0x8D665215, 0x5023F8AD, 0x32017194, 0xEF44DB2C,
@@ -465,7 +465,7 @@ static uint32_t sctp_crc_tableil8_o56[256] =
  * File Name = ............................ 8x256_tables.c
  */
 
-static uint32_t sctp_crc_tableil8_o64[256] =
+uint32_t sctp_crc_tableil8_o64[256] =
 {
 	0x00000000, 0x38116FAC, 0x7022DF58, 0x4833B0F4, 0xE045BEB0, 0xD854D11C, 0x906761E8, 0xA8760E44,
 	0xC5670B91, 0xFD76643D, 0xB545D4C9, 0x8D54BB65, 0x2522B521, 0x1D33DA8D, 0x55006A79, 0x6D1105D5,
@@ -521,7 +521,7 @@ static uint32_t sctp_crc_tableil8_o64[256] =
  * File Name = ............................ 8x256_tables.c
  */
 
-static uint32_t sctp_crc_tableil8_o72[256] =
+uint32_t sctp_crc_tableil8_o72[256] =
 {
 	0x00000000, 0xEF306B19, 0xDB8CA0C3, 0x34BCCBDA, 0xB2F53777, 0x5DC55C6E, 0x697997B4, 0x8649FCAD,
 	0x6006181F, 0x8F367306, 0xBB8AB8DC, 0x54BAD3C5, 0xD2F32F68, 0x3DC34471, 0x097F8FAB, 0xE64FE4B2,
@@ -577,7 +577,7 @@ static uint32_t sctp_crc_tableil8_o72[256] =
  * File Name = ............................ 8x256_tables.c
  */
 
-static uint32_t sctp_crc_tableil8_o80[256] =
+uint32_t sctp_crc_tableil8_o80[256] =
 {
 	0x00000000, 0x68032CC8, 0xD0065990, 0xB8057558, 0xA5E0C5D1, 0xCDE3E919, 0x75E69C41, 0x1DE5B089,
 	0x4E2DFD53, 0x262ED19B, 0x9E2BA4C3, 0xF628880B, 0xEBCD3882, 0x83CE144A, 0x3BCB6112, 0x53C84DDA,
@@ -633,7 +633,7 @@ static uint32_t sctp_crc_tableil8_o80[256] =
  * File Name = ............................ 8x256_tables.c
  */
 
-static uint32_t sctp_crc_tableil8_o88[256] =
+uint32_t sctp_crc_tableil8_o88[256] =
 {
 	0x00000000, 0x493C7D27, 0x9278FA4E, 0xDB448769, 0x211D826D, 0x6821FF4A, 0xB3657823, 0xFA590504,
 	0x423B04DA, 0x0B0779FD, 0xD043FE94, 0x997F83B3, 0x632686B7, 0x2A1AFB90, 0xF15E7CF9, 0xB86201DE,
