@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 #include <stdbool.h>
+#include <stdint.h>
+#include <string.h>
 #include "sdkconfig.h"
 #include "esp_log.h"
 #include "bootloader_init.h"
@@ -13,6 +15,13 @@
 static const char* TAG = "boot";
 
 static int select_partition_number(bootloader_state_t *bs);
+
+extern
+uint32_t
+calculate_crc32c(uint32_t crc32c,
+    const unsigned char *buffer,
+    unsigned int length);
+
 
 /*
  * We arrive here after the ROM bootloader finished loading this second stage bootloader from flash.
@@ -43,6 +52,16 @@ void __attribute__((noreturn)) call_start_cpu0(void)
 
     // 2.1 Print a custom message!
     esp_rom_printf("[%s] %s\n", TAG, CONFIG_EXAMPLE_BOOTLOADER_WELCOME_MESSAGE);
+
+
+    uint32_t crc = calculate_crc32c(0xffffffff, (const unsigned char *)CONFIG_EXAMPLE_BOOTLOADER_WELCOME_MESSAGE, strlen(CONFIG_EXAMPLE_BOOTLOADER_WELCOME_MESSAGE));
+
+    esp_rom_printf("[%s] crc %i \n", TAG, crc);
+
+
+
+
+
 
     // 3. Load the app image for booting
     bootloader_utility_load_boot_image(&bs, boot_index);
