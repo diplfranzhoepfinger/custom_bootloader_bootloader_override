@@ -2,8 +2,12 @@
 
 
 ```
-Bootloader binary size 0x7800 bytes. 0x800 bytes (6%) free.
-
+FAILED: bootloader.elf 
+/home/franz/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld: bootloader.elf section `.dram0.rodata' will not fit in region `dram_seg'
+/home/franz/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld: region `dram_seg' overflowed by 280 bytes
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+[4/9] cd /home/franz/git/franz/custom_bootl
 
 ```
 
