@@ -42,11 +42,12 @@
  * CRC32 code derived from work by Gary S. Brown.
  */
 
+#include <stdint.h>
 #include <sys/cdefs.h>
 __FBSDID("$FreeBSD: release/9.1.0/sys/libkern/crc32.c 188605 2009-02-14 11:34:57Z rrs $");
 
 #include <sys/param.h>
-#include <sys/systm.h>
+//#include <sys/systm.h>
 
 uint32_t crc32_tab[] = {
 	0x00000000, 0x77073096, 0xee0e612c, 0x990951ba, 0x076dc419, 0x706af48f,
