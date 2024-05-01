@@ -2,7 +2,7 @@
 
 
 ```
-Bootloader binary size 0x7cd0 bytes. 0x330 bytes (2%) free.
+Error: Bootloader binary size 0x89e0 bytes is too large for partition table offset 0x8000. Bootloader binary can be maximum 0x8000 (32768) bytes unless the partition table offset is increased in the Partition Table section of the project configuration menu.
 
 ```
 

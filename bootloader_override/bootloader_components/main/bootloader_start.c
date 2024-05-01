@@ -25,7 +25,7 @@ calculate_crc32c(uint32_t crc32c,
 
 extern uint32_t crc32_tab[];
 extern uint32_t crc32Table[256];
-extern uint32_t sctp_crc_tableil8_o32[256];
+extern uint32_t sctp_crc_tableil8_o32[1024];
 extern uint32_t sctp_crc_tableil8_o40[256];
 extern uint32_t sctp_crc_tableil8_o48[256];
 extern uint32_t sctp_crc_tableil8_o56[256];

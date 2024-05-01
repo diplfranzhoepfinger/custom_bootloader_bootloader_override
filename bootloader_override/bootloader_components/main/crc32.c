@@ -241,7 +241,7 @@ singletable_crc32c(uint32_t crc, const void *buf, size_t size)
  * File Name = ............................ 8x256_tables.c
  */
 
-uint32_t sctp_crc_tableil8_o32[256] =
+uint32_t sctp_crc_tableil8_o32[1024] =
 {
 	0x00000000, 0xF26B8303, 0xE13B70F7, 0x1350F3F4, 0xC79A971F, 0x35F1141C, 0x26A1E7E8, 0xD4CA64EB,
 	0x8AD958CF, 0x78B2DBCC, 0x6BE22838, 0x9989AB3B, 0x4D43CFD0, 0xBF284CD3, 0xAC78BF27, 0x5E133C24,
