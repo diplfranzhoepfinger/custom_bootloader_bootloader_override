@@ -1,6 +1,6 @@
 
 
-
+https://github.com/espressif/esp-idf/issues/13727
 
 ```
 franz@franz-Ubuntu:~/git/franz/custom_bootloader_bootloader_override/bootloader_override$ idf_size.py ./build/bootloader/bootloader.map 
