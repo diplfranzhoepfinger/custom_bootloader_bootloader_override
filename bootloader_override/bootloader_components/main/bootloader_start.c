@@ -23,6 +23,10 @@ calculate_crc32c(uint32_t crc32c,
     unsigned int length);
 
 
+extern uint32_t crc32_tab[];
+
+
+
 /*
  * We arrive here after the ROM bootloader finished loading this second stage bootloader from flash.
  * The hardware is mostly uninitialized, flash cache is down and the app CPU is in reset.
@@ -56,8 +60,11 @@ void __attribute__((noreturn)) call_start_cpu0(void)
 
     uint32_t crc = calculate_crc32c(0xffffffff, (const unsigned char *)CONFIG_EXAMPLE_BOOTLOADER_WELCOME_MESSAGE, strlen(CONFIG_EXAMPLE_BOOTLOADER_WELCOME_MESSAGE));
 
-    esp_rom_printf("[%s] crc %i \n", TAG, crc);
+    esp_rom_printf("[%s] crc %d \n", TAG, crc);
 
+
+
+    esp_rom_printf("[%s] crc32_tab[0] %d \n", TAG, crc32_tab[0]);
 
 
 
