@@ -2,7 +2,7 @@
 
 
 ```
-Bootloader binary size 0x7ca0 bytes. 0x360 bytes (3%) free.
+Bootloader binary size 0x7cd0 bytes. 0x330 bytes (2%) free.
 
 ```
 
