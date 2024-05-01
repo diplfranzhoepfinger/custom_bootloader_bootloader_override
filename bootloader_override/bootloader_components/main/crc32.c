@@ -297,7 +297,7 @@ uint32_t sctp_crc_tableil8_o32[256] =
  * File Name = ............................ 8x256_tables.c
  */
 
-static uint32_t sctp_crc_tableil8_o40[256] =
+uint32_t sctp_crc_tableil8_o40[256] =
 {
 	0x00000000, 0x13A29877, 0x274530EE, 0x34E7A899, 0x4E8A61DC, 0x5D28F9AB, 0x69CF5132, 0x7A6DC945,
 	0x9D14C3B8, 0x8EB65BCF, 0xBA51F356, 0xA9F36B21, 0xD39EA264, 0xC03C3A13, 0xF4DB928A, 0xE7790AFD,
